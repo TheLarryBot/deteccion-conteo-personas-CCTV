@@ -9,7 +9,7 @@ Dependencias:
     pip install ultralytics opencv-python pandas
 
 Uso:
-    python detector_camaras.py
+    python deteccion.py
 =============================================================
 """
 
@@ -30,22 +30,22 @@ from ultralytics import YOLO
 VIDEOS = [
     {
         "id":    "CAM-01",
-        "path":  r"D:\tecnar\semillero\deteccion-personas-cctv\data\video1.mp4",
+        "path":  r"Ruta video 1",
         "lugar": "Pasillo",
     },
     {
         "id":    "CAM-02",
-        "path":  r"D:\tecnar\semillero\deteccion-personas-cctv\data\video2.mp4",
+        "path":  r"Ruta video 2",
         "lugar": "Entrada",
     },
     {
         "id":    "CAM-03",
-        "path":  r"D:\tecnar\semillero\deteccion-personas-cctv\data\video3.mp4",
+        "path":  r"Ruta video 3",
         "lugar": "Caja",
     },
 ]
 
-ARCHIVO_CSV   = r"D:\tecnar\semillero\deteccion-personas-cctv\registros_deteccion.csv"
+ARCHIVO_CSV   = r"deteccion-personas-cctv\registros_deteccion.csv"
 MODELO_YOLO   = "yolov8s.pt"   # yolov8n=rapido, yolov8m=balanceado, yolov8l=preciso
 CONFIANZA     = 0.35
 IOU           = 0.45
